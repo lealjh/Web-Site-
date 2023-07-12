@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: raleway;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    position: relative;
+}
+
+header nav {
+
+    width: 100%;
+    background: #0612af;
+    /* padding-left: 120px;
+    padding-right: 120px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:15;
+}
+
+header nav ul{
+    display: flex;
+}
+
+
+header ul li{
+    list-style: none;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+header ul li:hover{
+    background: #ffffff6c;
+    color: #000;
+    padding: 2px 5px;
+    border-radius: 5px;
+    transform: translateY(-10px);
+}
+
+header li a{
+    color: #fff;
+    text-decoration: none;
+   
+    
+}
+
+header a.logo{
+    color:#fff;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600px;
+}
+
+header #hero{
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    background:url("/img/luna.jpg");
+    background-size: cover;
+}
+
+
+header #hero h1{
+    padding-top: 300px;
+    color: #fff;
+    font-size: 40px;
+}
+
+header #hero h3{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+header #hero p{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 600px;
+    padding-right: 600px;
+    margin-bottom: 50px;
+}
+
+header #hero a{
+    text-decoration: none;
+    color: #fff;
+    background: #667d86;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    max-width: 120px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+#about{
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+#about .fila{
+    display: flex;
+    max-width: 60%;
+    margin: 0 auto;
+
+}
+
+
+#about .fila img{
+    width: 500px;
+    transition: 1s;
+}
+#about .fila img:hover{
+    border-radius: 30px;
+    transform: scale(.9);
+}
+
+#about .fila .cont-info{
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+#about h2{
+    color:#1949b1; 
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#about p{
+    color:#111010; 
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#services{
+    width: 100%;
+    position: relative;
+    padding: 120px 0;
+    background: url(/img/galaxia.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+#services h2{
+    color:#000;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+#services .fila{
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+#services .fila .card{
+    width: 30%;
+    text-align: center;
+    background: #5786ec83;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 10px;
+    transition: .5s;
+}
+
+#services .fila .card:hover{
+    background: #1949b1;
+    border-radius: 0;
+    transform: translateY(-30px);
+}
+
+#services .fila .card:hover h3,
+#services .fila .card:hover p{
+    color:#fff ;
+}
+
+#services h3{
+    font-size: 28px;
+    color: #000;
+    margin-bottom:20px;
+
+}
+#services .card p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom:20px ;
+}
+
+#services .card a{
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+#video{
+    width: 100%;
+    position: relative;
+    padding: 120px O;
+    text-align: center;
+    margin: 30px auto;
+}
+
+#video h2{
+    font-size: 40px;
+    margin: 20px;
+}
+ 
+#video .cont-video{
+    width: 60%;
+    height: 450PX;
+    margin: 0 auto;
+}
+
+/* pie de pagina */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #85c1e98f;
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.pie-pagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo1 .box figure .name1{
+    width: 250px;
+
+}
+
+.pie-pagina .grupo1 a{
+    text-decoration: none;
+    color: #000;
+
+}
+.pie-pagina .grupo1 .box h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box h3{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 20px;
+    transition:  .5s;
+}
+.pie-pagina .box h3:hover{
+    color: #fff;
+    background: #667d86;
+    width: 180px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.pie-pagina .grupo1 .box p{
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45PX;
+    height: 45PX;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo1 .red-social a:hover{
+    color: rgb(231, 104, 45);
+}
+.pie-pagina .grupo2{
+    background-color: #0a1a2a;
+    padding: 15px 10px ;
+    text-align: center;
+    color: white;
+}
+.pie-pagina .grupo2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+        
+    }
+}
